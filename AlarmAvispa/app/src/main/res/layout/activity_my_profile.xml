@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MyProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMyProfile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="?homeAsUpIndicator" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutEmailProfile"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_left_field"
+        android:layout_marginLeft="@dimen/margin_left_field"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/margin_right_field"
+        android:layout_marginRight="@dimen/margin_right_field"
+        android:minHeight="?android:attr/actionBarSize"
+        android:transitionGroup="true"
+        app:layout_constraintBottom_toTopOf="@+id/layoutNameProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarMyProfile">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmailProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:focusable="false"
+            android:hint="@string/email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/text_size_fragment_login" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutNameProfile"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_left_field"
+        android:layout_marginLeft="@dimen/margin_left_field"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/margin_right_field"
+        android:layout_marginRight="@dimen/margin_right_field"
+        android:minHeight="?android:attr/actionBarSize"
+        android:transitionGroup="true"
+        app:helperText="@string/required"
+        app:helperTextEnabled="true"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        app:layout_constraintBottom_toTopOf="@+id/layoutSurnameProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutEmailProfile">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNameProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_name_profile"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName|textCapWords"
+            android:textSize="@dimen/text_size_fragment_login" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutSurnameProfile"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_left_field"
+        android:layout_marginLeft="@dimen/margin_left_field"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/margin_right_field"
+        android:layout_marginRight="@dimen/margin_right_field"
+        android:minHeight="?android:attr/actionBarSize"
+        android:transitionGroup="true"
+        app:helperText="@string/required"
+        app:helperTextEnabled="true"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        app:layout_constraintBottom_toTopOf="@+id/layoutIdCardProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutNameProfile">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSurnameProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_surname_profile"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName|textCapWords"
+            android:textSize="@dimen/text_size_fragment_login" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutIdCardProfile"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_left_field"
+        android:layout_marginLeft="@dimen/margin_left_field"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/margin_right_field"
+        android:layout_marginRight="@dimen/margin_right_field"
+        android:minHeight="?android:attr/actionBarSize"
+        android:transitionGroup="true"
+        app:layout_constraintBottom_toTopOf="@+id/layoutPhoneProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutSurnameProfile">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etIdCardProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_idCard_profile"
+            android:imeOptions="actionNext"
+            android:inputType="textCapCharacters"
+            android:textSize="@dimen/text_size_fragment_login" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutPhoneProfile"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_left_field"
+        android:layout_marginLeft="@dimen/margin_left_field"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/margin_right_field"
+        android:layout_marginRight="@dimen/margin_right_field"
+        android:minHeight="?android:attr/actionBarSize"
+        android:transitionGroup="true"
+        app:helperText="@string/required"
+        app:helperTextEnabled="true"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        app:layout_constraintBottom_toTopOf="@+id/layoutCityProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutIdCardProfile">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPhoneProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_phone_profile"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textSize="@dimen/text_size_fragment_login" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutCityProfile"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_left_field"
+        android:layout_marginLeft="@dimen/margin_left_field"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/margin_right_field"
+        android:layout_marginRight="@dimen/margin_right_field"
+        android:minHeight="?android:attr/actionBarSize"
+        android:transitionGroup="true"
+        app:layout_constraintBottom_toTopOf="@+id/layoutProvinceProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutPhoneProfile">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCityProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_city_profile"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences|textPostalAddress"
+            android:textSize="@dimen/text_size_fragment_login" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutProvinceProfile"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_left_field"
+        android:layout_marginLeft="@dimen/margin_left_field"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/margin_right_field"
+        android:layout_marginRight="@dimen/margin_right_field"
+        android:minHeight="?android:attr/actionBarSize"
+        android:transitionGroup="true"
+        app:layout_constraintBottom_toTopOf="@+id/btCancelProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutCityProfile">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etProvinceProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_province_profile"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences|textPostalAddress"
+            android:textSize="@dimen/text_size_fragment_login" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btCancelProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="@dimen/text_size_buttons_myProfile_activity"
+        android:text="@android:string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btUpdateProfile"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutProvinceProfile" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btUpdateProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/labelButtonUpdateProfile"
+        android:textSize="@dimen/text_size_buttons_myProfile_activity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btCancelProfile"
+        app:layout_constraintTop_toBottomOf="@+id/layoutProvinceProfile" />
+</androidx.constraintlayout.widget.ConstraintLayout>

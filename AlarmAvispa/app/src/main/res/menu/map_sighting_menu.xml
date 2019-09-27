@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_charts"
+        android:icon="@drawable/ic_charts"
+        android:title="@string/map_sighting_menu_title_charts"
+        app:showAsAction="ifRoom|withText">
+        <menu>
+            <item
+                android:id="@+id/annualCharts"
+                android:icon="@drawable/ic_charts"
+                android:title="@string/map_sighting_menu_option_annual_charts"
+                app:showAsAction="ifRoom">
+                <menu>
+                    <item
+                        android:id="@+id/chartByMunicipalitiesCurrentYearDest"
+                        android:icon="@drawable/icon_municipality_info_window_googlemaps"
+                        android:title="@string/map_sighting_menu_option_municipalities_chart"
+                        app:showAsAction="ifRoom" />
+                </menu>
+            </item>
+            <item
+                android:id="@+id/action_monthlyCharts"
+                android:icon="@android:drawable/ic_menu_month"
+                android:title="@string/map_sighting_menu_option_monthly_charts"
+                app:showAsAction="ifRoom" >
+                <menu>
+                    <item
+                        android:id="@+id/chartByMunicipalitiesCurrentMonthDest"
+                        android:icon="@drawable/icon_municipality_info_window_googlemaps"
+                        android:title="@string/map_sighting_menu_option_municipalities_monthly_chart"
+                        app:showAsAction="ifRoom" />
+                </menu>
+            </item>
+        </menu>
+    </item>
+</menu>

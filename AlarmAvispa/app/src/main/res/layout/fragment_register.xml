@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutScrollViewRegister"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".fragments.RegisterFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="@id/layoutScrollViewRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutScrollViewRegister">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutEmailRegister"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_left_field"
+            android:layout_marginLeft="@dimen/margin_left_field"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/margin_right_field"
+            android:layout_marginRight="@dimen/margin_right_field"
+            android:minHeight="?android:attr/actionBarSize"
+            android:transitionGroup="true"
+            app:helperText="@string/required"
+            app:helperTextEnabled="true"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:layout_constraintBottom_toTopOf="@+id/layoutPasswordRegister"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmailRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:textSize="@dimen/text_size_fragment_login" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutPasswordRegister"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_left_field"
+            android:layout_marginLeft="@dimen/margin_left_field"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/margin_right_field"
+            android:layout_marginRight="@dimen/margin_right_field"
+            android:minHeight="?android:attr/actionBarSize"
+            android:transitionGroup="true"
+            app:helperText="@string/required"
+            app:helperTextEnabled="true"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:layout_constraintBottom_toTopOf="@+id/layoutRetypePasswordRegister"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutEmailRegister"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPasswordRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:textSize="@dimen/text_size_fragment_login" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutRetypePasswordRegister"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_left_field"
+            android:layout_marginLeft="@dimen/margin_left_field"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/margin_right_field"
+            android:layout_marginRight="@dimen/margin_right_field"
+            android:minHeight="?android:attr/actionBarSize"
+            android:transitionGroup="true"
+            app:helperText="@string/required"
+            app:helperTextEnabled="true"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:layout_constraintBottom_toTopOf="@+id/layoutNameRegister"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutPasswordRegister"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etRetypePasswordRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/retypeNewPassword"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:textSize="@dimen/text_size_fragment_login" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutNameRegister"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_left_field"
+            android:layout_marginLeft="@dimen/margin_left_field"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/margin_right_field"
+            android:layout_marginRight="@dimen/margin_right_field"
+            android:minHeight="?android:attr/actionBarSize"
+            android:transitionGroup="true"
+            app:helperText="@string/required"
+            app:helperTextEnabled="true"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:layout_constraintBottom_toTopOf="@+id/layoutSurnameRegister"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutRetypePasswordRegister">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNameRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_name_profile"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName|textCapWords"
+                android:textSize="@dimen/text_size_fragment_login" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutSurnameRegister"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_left_field"
+            android:layout_marginLeft="@dimen/margin_left_field"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/margin_right_field"
+            android:layout_marginRight="@dimen/margin_right_field"
+            android:minHeight="?android:attr/actionBarSize"
+            android:transitionGroup="true"
+            app:helperText="@string/required"
+            app:helperTextEnabled="true"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:layout_constraintBottom_toTopOf="@+id/layoutIdCardRegister"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutNameRegister">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etSurnameRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_surname_profile"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName|textCapWords"
+                android:textSize="@dimen/text_size_fragment_login" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutIdCardRegister"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_left_field"
+            android:layout_marginLeft="@dimen/margin_left_field"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/margin_right_field"
+            android:layout_marginRight="@dimen/margin_right_field"
+            android:minHeight="?android:attr/actionBarSize"
+            android:transitionGroup="true"
+            app:layout_constraintBottom_toTopOf="@+id/layoutPhoneRegister"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutSurnameRegister">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etIdCardRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_idCard_profile"
+                android:imeOptions="actionNext"
+                android:inputType="textCapCharacters"
+                android:textSize="@dimen/text_size_fragment_login" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutPhoneRegister"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_left_field"
+            android:layout_marginLeft="@dimen/margin_left_field"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/margin_right_field"
+            android:layout_marginRight="@dimen/margin_right_field"
+            android:minHeight="?android:attr/actionBarSize"
+            android:transitionGroup="true"
+            app:helperText="@string/required"
+            app:helperTextEnabled="true"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:layout_constraintBottom_toTopOf="@+id/layoutCityRegister"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutIdCardRegister">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPhoneRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_phone_profile"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textSize="@dimen/text_size_fragment_login" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutCityRegister"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_left_field"
+            android:layout_marginLeft="@dimen/margin_left_field"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/margin_right_field"
+            android:layout_marginRight="@dimen/margin_right_field"
+            android:minHeight="?android:attr/actionBarSize"
+            android:transitionGroup="true"
+            app:layout_constraintBottom_toTopOf="@+id/layoutProvinceRegister"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutPhoneRegister">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etCityRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_city_profile"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences|textPostalAddress"
+                android:textSize="@dimen/text_size_fragment_login" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutProvinceRegister"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_left_field"
+            android:layout_marginLeft="@dimen/margin_left_field"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/margin_right_field"
+            android:layout_marginRight="@dimen/margin_right_field"
+            android:minHeight="?android:attr/actionBarSize"
+            android:transitionGroup="true"
+            app:layout_constraintBottom_toTopOf="@+id/btRegisterMe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutCityRegister">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etProvinceRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_province_profile"
+                android:imeOptions="actionDone"
+                android:inputType="textCapSentences|textPostalAddress"
+                android:textSize="@dimen/text_size_fragment_login" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btRegisterMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:text="@string/labelButtonRegisterMe"
+            android:textSize="@dimen/text_size_buttons_myProfile_activity"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutProvinceRegister" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

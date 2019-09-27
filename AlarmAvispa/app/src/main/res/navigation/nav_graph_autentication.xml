@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_autenticacion"
+    app:startDestination="@id/fragmentLogin">
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="es.alejandrtf.alarmavispa.fragments.LoginFragment"
+        android:label="@string/loginActivityLabel"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentRegister"
+            app:destination="@id/fragmentRegister"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@+id/fragmentLogin" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentRegister"
+        android:name="es.alejandrtf.alarmavispa.fragments.RegisterFragment"
+        android:label="@string/registerFragmentLabel"
+        tools:layout="@layout/fragment_register" >
+    </fragment>
+
+
+</navigation>

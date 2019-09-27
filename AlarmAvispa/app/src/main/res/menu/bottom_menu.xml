@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/informationHornetFragment"
+        android:icon="@drawable/ic_info_hornet"
+        android:title="@string/information" />
+    <item
+        android:id="@+id/notifySightingFragment"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:title="@string/notifySighting" />
+    <item
+        android:id="@+id/mapSightingFragment"
+        android:icon="@android:drawable/ic_dialog_map"
+        android:title="@string/sighting" />
+    <item
+        android:id="@+id/trapFragment"
+        android:icon="@drawable/ic_trap_hornet"
+        android:title="@string/traps" />
+</menu>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvItemSpinnerDropdown"
+    style="?android:attr/spinnerDropDownItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeightSmall"
+    android:padding="@dimen/padding_items_spinner"
+    android:textColor="@color/colorPrimaryDark"
+    android:textSize="@dimen/text_size_item_spinner_dropdown">
+
+</TextView>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp">
+
+    <TableLayout
+        android:id="@+id/glDialogHelpNestType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingBottom="16dp"
+        android:stretchColumns="*">
+
+        <TableRow android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/PRIMARY_SECONDARY"
+                android:textSize="@dimen/text_size_titles_add_sighting"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/EMBRYONIC"
+                android:textSize="@dimen/text_size_titles_add_sighting"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/secondary_nest" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/embryonic_nest" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:justificationMode="inter_word"
+                android:padding="8dp"
+                android:text="@string/when_primary_secondary_nest" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:justificationMode="inter_word"
+                android:padding="8dp"
+                android:text="@string/when_embryonic_nest" />
+        </TableRow>
+
+        <TableRow android:background="@color/colorOrangeLightTransparent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:justificationMode="inter_word"
+                android:padding="8dp"
+                android:text="@string/where_primary_secondary_nest" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:justificationMode="inter_word"
+                android:padding="8dp"
+                android:text="@string/where_embryonic_nest" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:justificationMode="inter_word"
+                android:padding="8dp"
+                android:text="@string/size_primary_secondary_nest" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:justificationMode="inter_word"
+                android:padding="8dp"
+                android:text="@string/size_embryonic_nest" />
+        </TableRow>
+
+        <TableRow android:background="@color/colorOrangeLightTransparent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:justificationMode="inter_word"
+                android:padding="8dp"
+                android:text="@string/material_primary_secondary_nest" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:justificationMode="inter_word"
+                android:padding="8dp"
+                android:text="@string/material_embryonic_nest" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:justificationMode="inter_word"
+                android:padding="8dp"
+                android:text="@string/entry_primary_secondary_nest" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:justificationMode="inter_word"
+                android:padding="8dp"
+                android:text="@string/entry_embryonic_nest" />
+
+        </TableRow>
+
+    </TableLayout>
+</ScrollView>

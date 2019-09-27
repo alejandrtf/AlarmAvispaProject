@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/flContainerPhoto"
+    android:layout_width="@dimen/width_height_each_photo"
+    android:layout_height="@dimen/width_height_each_photo"
+    android:paddingLeft="@dimen/padding_photos_recyclerview"
+    android:paddingRight="@dimen/padding_photos_recyclerview"
+    android:paddingBottom="@dimen/padding_photos_recyclerview">
+
+    <ImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@color/colorAccentLight" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_delete_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:clickable="true"
+        app:backgroundTint="@color/colorAccent"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+</FrameLayout>

@@ -1,0 +1,302 @@
+<resources>
+    <string name="app_name">AlarmAvispa</string>
+    <string name="information">Información</string>
+    <string name="notifySighting">Avisar</string>
+    <string name="sighting">Avistamientos</string>
+    <string name="traps">Trampas</string>
+    <string name="imageHornetLogo">Imagen de una avispa asiática</string>
+    <string name="labelButtonPhotoFragmentNotify">¡Fotografíame!</string>
+    <string name="labelButtonGalleryFragmentNotify">¡Selecciónala desde tu galería!</string>
+    <string name="nav_drawer_menu_option_login">Iniciar sesión</string>
+    <string name="nav_drawer_menu_option_profile">Mi Perfil</string>
+    <string name="nav_drawer_menu_option_change_password">Cambiar contraseña</string>
+    <string name="nav_drawer_menu_option_close_session">Cerrar sesión</string>
+    <string name="help">Ayuda</string>
+    <string name="nav_drawer_menu_option_about">Acerca De</string>
+    <string name="nav_drawer_menu_option_contact">Contacto</string>
+    <string name="nav_drawer_menu_option_lopd_and_privacy">Política de Privacidad y LOPD</string>
+    <string name="nav_drawer_menu_option_terms_and_conditions">Términos y Condiciones de Uso</string>
+    <string name="nav_drawer_menu_option_web">Web de la aplicación</string>
+
+    <!--LOGIN-->
+    <string name="loginActivityLabel">Identifícate en AlarmAvispa</string>
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="labelPasswordForgotten">¿Has olvidado tu contraseña?</string>
+    <string name="labelNewInAlarmAvispa">¿Eres nuevo en AlarmAvispa?</string>
+    <string name="labelBtnRegister">Regístrate</string>
+    <string name="verifyingUser">Verificando usuario</string>
+    <string name="pleaseWaiting">Por favor espere...</string>
+    <string name="messageVerification">Te hemos enviado un enlace a tu email. Por favor, comprueba tu bandeja de entrada: <br /></string>
+    <string name="titleDialog">VERIFICACIÓN DE EMAIL</string>
+    <string name="buttonVerification">YA HE VERIFICADO</string>
+    <string name="error_email_empty">Introduce un email</string>
+    <string name="error_invalid_email">Email no válido</string>
+    <string name="error_password_empty">Introduce una contraseña</string>
+    <string name="error_password_invalid_lenght">Ha de contener al menos 6 caracteres</string>
+    <string name="error_password_without_number">Ha de contener un número</string>
+    <string name="error_password_without_capital_letter">Ha de contener una letra mayúscula</string>
+    <string name="prefs_key_user_email">EMAIL</string>
+    <string name="prefs_key_user_id">USERID</string>
+    <string name="prefs_key_full_name">FULL_NAME</string>
+    <string name="title_dialog_reset_password">RECUPERAR CONTRASEÑA</string>
+    <string name="verify_email_reset_password">Comprueba tu email para cambiar la contraseña.</string>
+    <string name="error_send_email_reset_password">Ha ocurrido un error al enviar el email para resetear la contraseña.</string>
+
+    <!-- MY PROFILE-->
+    <string name="myProfileActivityLabel">Mi Perfil</string>
+    <string name="hint_name_profile">Nombre</string>
+    <string name="hint_surname_profile">Apellidos</string>
+    <string name="hint_idCard_profile">DNI, NIE o pasaporte</string>
+    <string name="hint_phone_profile">Teléfono de contacto</string>
+    <string name="hint_city_profile">Ciudad</string>
+    <string name="hint_province_profile">Provincia</string>
+    <string name="labelButtonUpdateProfile">Actualizar Mi Perfil</string>
+    <string name="asterisk">*</string>
+    <string name="required">* obligatorio</string>
+
+    <!-- CHANGE PASSWORD-->
+    <string name="changePasswordActivityLabel">Cambiar Contraseña</string>
+    <string name="oldPassword">Contraseña actual</string>
+    <string name="newPassword">Nueva Contraseña</string>
+    <string name="retypeNewPassword">Confirma la nueva contraseña</string>
+    <string name="labelButtonChangePassword">Cambiar Contraseña</string>
+    <string name="passwordNoMatch">Las contraseñas no coinciden</string>
+    <string name="errorChangingPassword">ERROR: No se ha podido cambiar la contraseña!! Por favor, inténtelo más tarde.</string>
+    <string name="successChangingPassword">La contraseña ha sido cambiada correctamente!!!.</string>
+    <string name="errorAuthenticationFailed">ERROR: Autenticación fallida!!!</string>
+    <string name="errorOldNewPasswordMatch">ERROR: La contraseña actual y la nueva coinciden. Por favor, inténtelo de nuevo.</string>
+    <string name="registerFragmentLabel">Regístrate en AlarmAvispa</string>
+    <string name="labelButtonRegisterMe">REGISTRARME</string>
+
+    <!-- REGISTER -->
+    <string name="error_name_empty">Introduce tu nombre</string>
+    <string name="error_surname_empty">Introduce tus apellidos</string>
+    <string name="error_phone_empty">Introduce un teléfono de contacto</string>
+    <string name="title_dialog_successful_register">REGISTRADO CON ÉXITO</string>
+    <string name="message_dialog_successful_register">Has sido registrado con éxito. Accede a INICIO SESIÓN para entrar en AlarmAvispa con tu email y contraseña.</string>
+
+    <!-- SIGHTING -->
+    <!-- constants -->
+    <string name="TREE">Árbol</string>
+    <string name="BUILDING">Edificación</string>
+    <string name="TERRAIN">Terreno</string>
+    <string name="PRIMARY_SECONDARY">Primario/Secundario</string>
+    <string name="EMBRYONIC">Embrionario</string>
+    <string name="HORNET">Avispa</string>
+    <string name="NEST">NIDO</string>
+    <string name="SOLVED">Resuelto</string>
+    <string name="PENDING_VERIFICATION">Pendiente verificación</string>
+    <string name="REPORTED">Reportado</string>
+    <string name="PENDING_RESOLUTION">Pendiente resolución</string>
+    <string name="NOT_INTERVENTION_SIGHTING">No intervención</string>
+    <string name="ACTIVE">Activo</string>
+    <string name="REMOVED">Ya eliminado</string>
+    <string name="INACTIVE">Inactivo</string>
+    <string name="NOT_VELUTINA">No velutina</string>
+    <string name="NOT_LOCATED">No localizado</string>
+    <string name="NOT_INTERVENTION">Sin intervención</string>
+    <string name="BIOCIDE_INJECTED">Biocida bombeado</string>
+    <string name="BIOCIDE_SPRAYED">Biocida Spray</string>
+
+    <!--AddPhotosFragment-->
+    <string name="error_reading_firebase">Error leyendo la base de datos</string>
+    <string name="addSightingActivityLabel">Añadir Avistamiento</string>
+    <string name="addPhotosFragmentLabel">Añadir Fotos</string>
+    <string name="requestPermission">Solicitud de permiso</string>
+    <string name="justificationPermissionCamera">Sin el permiso de cámara no se pueden tomar fotos</string>
+    <string name="justificationPermissionWriteExternaStorage">Sin el permiso de almacenamiento no se podrán guardar fotos ni enviar el avistamiento.</string>
+    <string name="appPhotosDirectory">FotosAlarmAvispa</string>
+    <string name="error_loading_photo">Error cargando la foto</string>
+    <string name="labelMoreImages">¿Más imágenes?</string>
+    <string name="labelBtNext">Siguiente</string>
+    <string name="place">Lugar (barrio, bosque, carretera, patio,...)</string>
+    <string name="labelPlaceSeenNest">¿En qué lugar lo has visto?</string>
+    <string name="labelPlaceSeenWasp">¿En qué lugar las has visto?</string>
+    <string name="wasps">Avispas</string>
+    <string name="nests">Nido</string>
+    <string name="labelWhatYouSeen">¿Qué has visto?</string>
+    <string name="error_limit_allowed_photos">No puedes adjuntar más de 6 fotos!!!!</string>
+
+    <!--AddLocationFragment-->
+    <string name="addLocationFragmentLabel">Dónde estás</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyAhSEL1WCAp0_DsXJxyQiRtKqnKOnmpsIk
+    </string>
+    <string name="labelWhereAreYou">¿En qué localidad estás?</string>
+    <string name="commentsLocation">Notas para ayudar a localizarlo</string>
+    <string name="locality">Localidad</string>
+    <string name="longitude">Longitud</string>
+    <string name="latitude">Latitud</string>
+    <string name="error_loading_google_map">Error cargando el mapa de Google Maps</string>
+    <string name="justificationPermissionLocation">Sin el permiso de localización no se pueden obtener automáticamente
+        su localización para registrar el avistamiento; ni ver los ya registrados.</string>
+    <string name="error_permission_location_denied">No tiene concedido el permiso de localización. Por favor, concédalo para poder localizarle!!!</string>
+    <string name="location_data_extra_not_available">No se ha suministrado una localización al servicio Geocoder y por tanto no puedo averiguar tu localidad.</string>
+    <string name="service_not_available">Error: servicio reconocimiento localidad no disponible.</string>
+    <string name="invalid_lat_long_used">Error: la latitud o longitud indicadas son erróneas. Por favor, revíselas</string>
+    <string name="no_address_found">No se ha encontrado ninguna dirección para esa latitud y longitud</string>
+    <string name="address_found">Dirección encontrada</string>
+    <string name="error_receiver_not_available">ERROR: no has indicado ningún receptor para recogerlos resultados de la petición de localidad.</string>
+
+    <!-- AddDescriptionNestFragment -->
+    <string name="addDescriptionNestFragmentLabel">Cómo es el nido</string>
+    <string name="addWhoAreYoutFragmentLabel">Quién eres</string>
+    <string name="labelHowIsTheNest">¿Cómo es el nido?</string>
+    <string name="labelNestType">Tipo</string>
+    <string name="labelDoubsType">¿No sabes cuál es el tipo?</string>
+    <string name="labelHelpDoubsType">Ayuda</string>
+    <string name="labelSpNestStand">Selecciona el soporte del nido</string>
+    <string name="labelNestHeight">¿A qué altura aproximada está el nido\n (en metros)?</string>
+    <string name="labelWaspAround">¿Había avispas alrededor?</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="titleDialogNestsTypes">Tipos de Nidos</string>
+    <string name="dash">-</string>
+    <!-- dialog nest types -->
+    <string name="size_primary_secondary_nest">Tamaño hasta de 1 metro de altura y entre 40 y 80 cm de diámetro.</string>
+    <string name="size_embryonic_nest">Tamaño de una pelota de tenis (diámetro menor de 10 cm). Se puede eliminar la reina con un matamoscas.</string>
+    <string name="when_embryonic_nest">Suele aparecer a principios de primavera y es temporal.</string>
+    <string name="when_primary_secondary_nest">Suele aparecer desde principios de verano hasta otoño y es el definitivo de la colonia.</string>
+    <string name="material_embryonic_nest">Construido con una textura parecida al papel maché muy fino.</string>
+    <string name="material_primary_secondary_nest">Construido con un material muy rugoso.</string>
+    <string name="where_embryonic_nest">En zonas resguardadas de la lluvia y del aire: garajes, cobertizos, aleros, cornisas, agujeros, paredes, suelo,...</string>
+    <string name="where_primary_secondary_nest">Sitios altos como árboles.  También pueden aparecer en alguna cornisa y muy ocasionalmente en sebes e incluso en el suelo.</string>
+    <string name="entry_embryonic_nest">Tienen la entrada por abajo.</string>
+    <string name="entry_primary_secondary_nest">Tienen la entrada por un lateral.</string>
+    <string name="close">CERRAR</string>
+    <string name="labelWhoAreYou">¿Quién eres?</string>
+    <string name="fullName">Nombre y apellidos</string>
+    <string name="InformationPrivacyPolicyAddWhoAreYou">Estos datos serán almacenados en un lugar seguro y utilizados con la única
+        finalidad de llevar a cabo el servicio para el que fueron solicitados, manteniendo la privacidad. Para continuar,
+        el usuario debe aceptar la <a href="https://alejandrtf.github.io/AlarmAvispa/privacy.html"> %1$s <b>Política de privacidad</b> %2$s.</a></string>
+    <string name="accept_privacy_policy">Acepto la Política de Privacidad</string>
+    <string name="labelBtSendSighting">Enviar Avistamiento</string>
+
+    <!-- AddWhoAreYouFragment -->
+    <string name="error_privacy_policy_not_accepted">Debe aceptar la política de privacidad para continuar!.</string>
+    <string name="error_requiered_field_without_fill"> Hay campos obligatorios sin rellenar. Por favor, revíse sus datos!.</string>
+    <string name="municipality">Municipio</string>
+    <string name="title_dialog_uploading_photos">Subiendo las fotos...</string>
+    <string name="error_uploading_photos_title">ERROR: Subiendo las fotos</string>
+    <string name="error_uploading_photos_message">Ha ocurrido un error al subir las fotos del avistamiento.</string>
+    <string name="error_conection_internet_title">Sin conexión a Internet</string>
+    <string name="error_conection_internet_message">Actualmente no tienes Internet y se necesita para enviar el avistamiento.\n Revisa tu conexión e inténtalo más tarde!!</string>
+    <string name="title_dialog_sending_sighting">Enviando el Avistamiento...Espere, por favor!!!!</string>
+    <string name="error_getting_number_notifications_message">Error obteniendo el número de notificaciones que hubo ese año en ese municipio</string>
+    <string name="error_getting_number_notifications_title">Error obteniendo el número de notificaciones!</string>
+    <string name="error_adding_sighting_message">Error añadiendo el avistamiento a la Base de Datos</string>
+    <string name="error_adding_sighting_title">Error añadiendo el avistamiento!</string>
+    <string name="whatsapp_number_official">610255111 </string>
+    <string name="share_by_whatsapp">Compartir por Whatsapp</string>
+    <string name="justificationPermissionReadContact">El permiso para leer los contactos es necesario para comprobar si se tiene el número de whatsapp oficial agregado
+                        como contacto para poder enviarles el avistamiento por Whatsapp. Sin este permiso la operación de notificar el avistamiento no puede finalizar.
+    </string>
+    <string name="justificationPermissionWriteContact">Si no se tiene el número oficial de whatsapp necesario para enviar el avistamiento añadido en la lista de contactos del
+                                                dispositivo, es imprescindible añadirlo. Este proceso de añadir el contacto será hecho automáticamente por usted si concede este permiso.
+                                                \n Sin él, no podrá enviar el Whatsapp.
+    </string>
+    <string name="title_dialog_new_creation_contact">Creación de un nuevo contacto para el Whatsapp</string>
+    <string name="message_dialog_new_creation_contact">Se va a proceder a crear un nuevo contacto de nombre \"AlarmAvispa\".\n Este contacto es necesario para poder enviar el whatsapp con los datos del avistamiento.</string>
+    <string name="accept">ACEPTAR</string>
+    <string name="cancel">CANCELAR</string>
+    <string name="error_rejecting_creation_new_contact">Si no crea el nuevo contacto no podrá registrar su avistamiento y notificarlo a las autoridades pertinentes.</string>
+    <string name="title_dialog_created_contact">Contacto creado con éxito</string>
+    <string name="message_dialog_created_contact">Para continuar con el envío pulse el botón </string>
+    <string name="whatsapp_package_name">com.whatsapp</string>
+    <string name="title_dialog_not_installed_whatsapp">WHATSAPP No instalado</string>
+    <string name="message_dialog_not_installed_whatsapp">No se ha detectado que tenga instalada la aplicación de Whatsapp.\n Se enviará por email este avistamiento. \n Si desea enviarlo por Whatsapp, por favor, debe instalar Whatsapp para poder enviar el avistamiento!!</string>
+    <string name="error_permission_read_contact">No tiene concedido el permiso para leer los contactos. Sin él no se puede comprobar si ya dispone del contacto necesario para enviar el whatsapp. Por favor, concédalo!</string>
+    <string name="error_permission_write_external_storage">No tiene concedido el permiso de almacenamiento. Es necesario para enviar el Whatsapp con los datos del avistamiento. Por favor, concédalo!!!</string>
+    <string name="file_extension">.txt</string>
+    <string name="title_text_send_by_whatsapp">INFORMACIÓN DETALLADA DEL AVISTAMIENTO</string>
+    <string name="labelNestStand">Soporte del nido</string>
+    <string name="nestHeight">¿A qué altura está el nido (en metros)?</string>
+    <string name="sighting_date">Fecha del avistamiento</string>
+    <string name="title_dialog_help_continue_sending">Cómo continuar con el envío</string>
+    <string name="message_dialog_help_continue_sending">Sigue las siguientes instrucciones y la información
+                                        se enviará por Whatsapp a \"AlarmAvispa\":\n\n
+                                        1.- Aparecerá automáticamente una ventana de Whatsapp.\n
+                                        2.- Selecciona el contacto \"AlarmAvispa\" y haz clic sobre él.\n
+                                        3.- Haz clic sobre el BOTÓN VERDE  para que el whatsapp se envíe.\n
+                                        4.- Como el envío incluye fotos, debes pulsar de nuevo el mismo BOTÓN VERDE para enviarlas.\n</string>
+    <string name="send_by_whatsapp">Enviar por WHATSAPP</string>
+    <string name="error_rejecting_sending_whatsapp">Si no envías el whatsapp, el avistamiento no será notificado a las autoridades responsables de su tratamiento.</string>
+    <string name="privacy_policy">Política de Privacidad</string>
+    <string name="message_loading">Cargando...</string>
+    <string name="error_loading_privacy_web_message">Ha ocurrido un error durante la carga de la política de privacidad.</string>
+    <string name="error_loading_privacy_web_title">Error cargando la política de privacidad</string>
+    <string name="terms_conditions">Términos y Condiciones de uso</string>
+    <string name="error_loading_terms_conditions_web_message">Ha ocurrido un error durante la carga de los términos y condiciones de uso.</string>
+    <string name="error_loading_terms_conditions_web_title">Error cargando los términos y condiciones de uso</string>
+    <string name="web_app_with_privacy">Web de la aplicación</string>
+    <string name="error_loading__web_message">Ha ocurrido un error durante la carga de la Web de la aplicación.</string>
+    <string name="error_loading__web_title">Error cargando la Web de la aplicación.</string>
+
+
+    <!-- MapSightingFragment -->
+    <string name="mapSightingFragmentLabel">Avistamientos</string>
+
+    <!--TrapFragmentLabel-->
+    <string name="trapFragmentLabel">Trampas</string>
+
+    <!-- others-->
+    <string name="error_getting_query">Ha ocurrido un error al recibir los avistamientos desde Internet</string>
+    <string name="unknown_change">Tipo de cambio desconocido</string>
+    <string name="route">CÓMO LLEGAR</string>
+    <string name="title_dialog_notification_new_registered_sighting">Nuevo avistamiento registrado!</string>
+    <string name="coordinates_new_sighting_title">Coordenadas del nuevo avistamiento:</string>
+    <string name="go">IR A VERLO</string>
+    <string name="map_sighting_menu_option_annual_charts">Gráficos anuales</string>
+    <string name="map_sighting_menu_option_monthly_charts">Gráficos mensuales del año en curso</string>
+    <string name="map_sighting_menu_option_municipalities_chart">Gráfico por municipios del año en curso</string>
+    <string name="map_sighting_menu_option_municipalities_monthly_chart">Gráfico por municipios del mes actual</string>
+    <string name="map_sighting_menu_title_charts">Gráficos</string>
+
+    <string name="chartByMunicipalitiesCurrentYearLabel">Gráfico por municipios del año en curso</string>
+    <string name="chartBar3dSightingByMunicipalityTitle">Nº avistamientos por municipio dentro del año en curso</string>
+    <string name="chartBar3dSightingByMunicipalityYAxisTitle">Número de avistamientos</string>
+    <string name="chartByMunicipalitiesCurrentMonth">Gráfico del mes actual por municipios</string>
+    <string name="municipalities">Municipios</string>
+    <string name="not_data">No hay datos para mostrar</string>
+    <string name="error_fields_register">Error Información Incorrecta</string>
+    <string name="error_fields_register_message">Revisa toda la información de nuevo: email, password,... Hay información incorrecta.</string>
+    <string name="error_conection_internet_loading_privacy">Imposible cargar la política de privacidad porque no tienes Internet. \n Revisa tu conexión e inténtalo más tarde!</string>
+    <string name="error_conection_internet_terms_conditions">Imposible cargar los términos y condiciones de uso porque no tienes Internet. \n Revisa tu conexión e inténtalo más tarde!</string>
+    <string name="error_conection_internet_webapp">Imposible cargar la web de la aplicación porque no tienes Internet. \n Revisa tu conexión e inténtalo más tarde!</string>
+    <string name="error_gps_not_available_or_internet">No se ha podido obtener su latitud y longitud posiblemente debido a que no dispone de Internet o bien está en una zona sin cobertura GPS. Por favor, inténtelo más tarde o introduzca manualmente la latitud y longitud.</string>
+    <string name="error_invalid_latitude">Latitud no válida</string>
+    <string name="error_invalid_longitude">Longitud no válida</string>
+    <string name="error_invalid_municipality">Municipio no detectado o sin introducir manualmente</string>
+    <string name="sighting_subject_email">Nuevo nido/avispa velutina avistado</string>
+    <string name="sighting_text_email">Como adjunto se envían las fotos y los datos de un nuevo nido avistado mediante la aplicación móvil AlarmAvispa</string>
+    <string name="share_by_email">Enviar por email:</string>
+
+    <!-- ContactActivity -->
+    <string name="contactActivityLabel">Contacto</string>
+    <string name="subject">Asunto</string>
+    <string name="message">Mensaje</string>
+    <string name="send_message">ENVIAR</string>
+    <string name="error_subject_empty">Introduce un asunto para el mensaje</string>
+    <string name="error_message_empty">Introduce un mensaje para enviar</string>
+    <string name="title_dialog_send_message_contact">Elige una aplicación para enviar el email</string>
+
+    <!-- AboutFragment -->
+    <string name="about">Acerca de</string>
+    <string name="textAbout">Esta aplicación está diseñada para colaborar en la erradicación de la avispa asiática en Asturias.
+                            Los datos recogidos serán almacenados en una Base de Datos y además serán enviados a la Consejería de
+                            Infraestructuras, Ordenación del territorio y Medio Ambiente a través del Whatsapp 610255111 o en caso de
+                            no poseer la aplicación Whatsapp se enviarán por email a info@avisap.es como establece
+                            el BOPA 104 del viernes 31 de mayo de 2019 del Principado de Asturias.\n\n
+                            El proyecto se ha desarrollado como Proyecto Final del Máster en Desarrollo de Aplicaciones sobre
+                            Dispositivos Móviles de la Universidad Politécnica de Valencia por Mª Alejandra Tomás Fernández bajo la
+                            dirección de Vicente Carbonell.\n\n
+                            La propiedad de la aplicación, así como la idea y desarrollo pertenecen a Mª Alejandra Tomás Fernández.\n\n
+                            El icono de la avispa negra usado como marcador en Google Maps, así como el icono del nido usado también como
+                            marcador de Google Maps han sido realizados por Freepik: \"Icon made by Freepik from www.flaticon.com\".
+    </string>
+
+    <!-- HelpFragment-->
+    <string name="how_use_app">Cómo usar AlarmAvispa</string>
+
+</resources>

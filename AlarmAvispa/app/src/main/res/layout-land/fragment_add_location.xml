@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintAddLocation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddLocationFragment">
+
+    <TextView
+        android:id="@+id/tvLabelWhereAreYou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/labelWhereAreYou"
+        android:textColor="@color/colorAccentDark"
+        android:textSize="@dimen/text_size_titles_add_sighting"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@id/btNextAddLocationFragment"
+        app:layout_constraintEnd_toStartOf="@+id/layoutLatitudeAddLocationFragment"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLabelWhereAreYou" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutLatitudeAddLocationFragment"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:minHeight="?android:attr/actionBarSize"
+        android:transitionGroup="true"
+        app:helperText="@string/required"
+        app:helperTextEnabled="true"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+
+        app:layout_constraintBottom_toTopOf="@+id/layoutLocalityAddLocationFragment"
+        app:layout_constraintEnd_toStartOf="@id/layoutLongitudeAddLocationFragment"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/map"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelWhereAreYou">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etLatitudeAddLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/latitude"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:textSize="@dimen/text_size_texts_add_sighting" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutLongitudeAddLocationFragment"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:minHeight="?android:attr/actionBarSize"
+        android:transitionGroup="true"
+        app:helperText="@string/required"
+        app:helperTextEnabled="true"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        app:layout_constraintBottom_toTopOf="@+id/layoutLocalityAddLocationFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/layoutLatitudeAddLocationFragment"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelWhereAreYou">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etLongitudeAddLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/longitude"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:textSize="@dimen/text_size_texts_add_sighting" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutLocalityAddLocationFragment"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:minHeight="?android:attr/actionBarSize"
+        android:transitionGroup="true"
+        app:layout_constraintBottom_toTopOf="@+id/layoutMunicipalityAddLocationFragment"
+        app:layout_constraintEnd_toStartOf="@id/btEditLocalityAddLocation"
+        app:layout_constraintStart_toStartOf="@+id/layoutLatitudeAddLocationFragment"
+        app:layout_constraintTop_toBottomOf="@+id/layoutLongitudeAddLocationFragment">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etLocalityAddLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/locality"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:textSize="@dimen/text_size_texts_add_sighting" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/btEditLocalityAddLocation"
+        style="@android:style/Widget.Material.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_menu_edit"
+        android:tint="@color/tint_btn_edit"
+        app:layout_constraintBottom_toBottomOf="@+id/layoutLocalityAddLocationFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/layoutLocalityAddLocationFragment"
+        app:layout_constraintTop_toTopOf="@id/layoutLocalityAddLocationFragment" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutMunicipalityAddLocationFragment"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:minHeight="?android:attr/actionBarSize"
+        android:transitionGroup="true"
+        app:layout_constraintBottom_toTopOf="@+id/layoutCommentsAddLocationFragment"
+        app:layout_constraintEnd_toStartOf="@id/btEditMunicipalityAddLocation"
+        app:layout_constraintStart_toStartOf="@+id/layoutLatitudeAddLocationFragment"
+        app:layout_constraintTop_toBottomOf="@+id/layoutLocalityAddLocationFragment">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etMunicipalityAddLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/municipality"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:textSize="@dimen/text_size_texts_add_sighting" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/btEditMunicipalityAddLocation"
+        style="@android:style/Widget.Material.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_menu_edit"
+        android:tint="@color/tint_btn_edit"
+        app:layout_constraintBottom_toBottomOf="@+id/layoutMunicipalityAddLocationFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/layoutMunicipalityAddLocationFragment"
+        app:layout_constraintTop_toTopOf="@id/layoutMunicipalityAddLocationFragment" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutCommentsAddLocationFragment"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:minHeight="?android:attr/actionBarSize"
+        android:transitionGroup="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/layoutLocalityAddLocationFragment"
+        app:layout_constraintTop_toBottomOf="@+id/layoutMunicipalityAddLocationFragment">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCommentsAddLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/commentsLocation"
+            android:imeOptions="actionDone"
+            android:inputType="textLongMessage|textMultiLine|textCapSentences"
+            android:textSize="@dimen/text_size_texts_add_sighting" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btNextAddLocationFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/labelBtNext"
+        android:textSize="@dimen/text_size_buttons_add_sighting"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/map"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map" />
+</androidx.constraintlayout.widget.ConstraintLayout>

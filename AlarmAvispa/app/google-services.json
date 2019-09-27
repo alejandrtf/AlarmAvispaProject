@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "474781592527",
+    "firebase_url": "https://alarmavispa.firebaseio.com",
+    "project_id": "alarmavispa",
+    "storage_bucket": "alarmavispa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474781592527:android:d968fed55728f386",
+        "android_client_info": {
+          "package_name": "es.alejandrtf.alarmavispa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "474781592527-psu4utmmfu49nctkh5bg34ec5b7ndl8j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "es.alejandrtf.alarmavispa",
+            "certificate_hash": "5bda3fdebe7e865a5dfac0621ad0e5dbc7ee362c"
+          }
+        },
+        {
+          "client_id": "474781592527-na04bhto9m9jf1voa5atlt1vupvvgchp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCicPX2PdfDdmiQQ0WAiIaqy-6wr-84eVc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "474781592527-na04bhto9m9jf1voa5atlt1vupvvgchp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

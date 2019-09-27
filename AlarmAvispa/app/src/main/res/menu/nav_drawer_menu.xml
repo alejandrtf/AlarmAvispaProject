@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/section_user_not_logged">
+        <item
+            android:id="@id/loginActivityDest"
+            android:icon="@android:drawable/ic_secure"
+            android:title="@string/nav_drawer_menu_option_login" />
+    </group>
+    <group
+        android:id="@+id/section_user_logged"
+        android:visible="false">
+        <item
+            android:id="@+id/myProfileActivityDest"
+            android:icon="@drawable/profile_24"
+            android:title="@string/nav_drawer_menu_option_profile" />
+        <item
+            android:id="@+id/changePasswordActivityDest"
+            android:icon="@android:drawable/ic_popup_sync"
+            android:title="@string/nav_drawer_menu_option_change_password" />
+        <item
+            android:id="@+id/closeSessionOptionDest"
+            android:icon="@drawable/baseline_exit_to_app_24"
+            android:title="@string/nav_drawer_menu_option_close_session" />
+    </group>
+    <group android:id="@+id/section_lopd">
+        <item
+            android:id="@+id/lopdFragmentDest"
+            android:icon="@android:drawable/stat_sys_warning"
+            android:title="@string/nav_drawer_menu_option_lopd_and_privacy" />
+        <item
+            android:id="@+id/termsConditionsFragmentDest"
+            android:icon="@drawable/ic_terms_conditions"
+            android:title="@string/nav_drawer_menu_option_terms_and_conditions" />
+        <item
+            android:id="@+id/webAppFragmentDest"
+            android:icon="@drawable/ic_web"
+            android:title="@string/nav_drawer_menu_option_web" />
+    </group>
+    <item
+        android:id="@+id/contactActivityDest"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="@string/nav_drawer_menu_option_contact" />
+    <item
+        android:id="@+id/aboutFragmentDest"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="@string/nav_drawer_menu_option_about" />
+    <item
+        android:id="@+id/helpFragmentDest"
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="@string/help" />
+
+</menu>

@@ -1,0 +1,313 @@
+<resources>
+    <string name="app_name">WaspAlarm</string>
+    <string name="information">Information</string>
+    <string name="notifySighting">Notify</string>
+    <string name="sighting">Sightings</string>
+    <string name="traps">Traps</string>
+    <string name="imageHornetLogo">Image of an Asian wasp</string>
+    <string name="labelButtonPhotoFragmentNotify">Take my pic!</string>
+    <string name="labelButtonGalleryFragmentNotify">Select from your gallery!</string>
+    <string name="nav_drawer_menu_option_login">Sign in</string>
+    <string name="nav_drawer_menu_option_profile">My Profile</string>
+    <string name="nav_drawer_menu_option_change_password">Change password</string>
+    <string name="nav_drawer_menu_option_close_session">Close session</string>
+    <string name="help">Help</string>
+    <string name="nav_drawer_menu_option_about">About</string>
+    <string name="nav_drawer_menu_option_contact">Contact</string>
+    <string name="nav_drawer_menu_option_lopd_and_privacy">Privacy Policy and LOPD</string>
+    <string name="nav_drawer_menu_option_terms_and_conditions">Terms and conditions of use</string>
+    <string name="nav_drawer_menu_option_web">WaspAlarm Web</string>
+
+    <!--LOGIN-->
+    <string name="loginActivityLabel">Sign in into WaspAlarm</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="labelPasswordForgotten">Forgot password?</string>
+    <string name="labelNewInAlarmAvispa">Are you new? </string>
+    <string name="labelBtnRegister">Register</string>
+    <string name="verifyingUser">Verifying user</string>
+    <string name="pleaseWaiting">Please wait...</string>
+    <string name="messageVerification">We have sent you a link to your email. Please check your inbox: <br /></string>
+    <string name="titleDialog">EMAIL VERIFICATION</string>
+    <string name="buttonVerification">I HAVE ALREADY VERIFIED</string>
+    <string name="error_email_empty">Enter email</string>
+    <string name="error_invalid_email">Invalid email</string>
+    <string name="error_password_empty">Enter password</string>
+    <string name="error_password_invalid_lenght">Password must be at least 6 characters</string>
+    <string name="error_password_without_number">Password must contain a number</string>
+    <string name="error_password_without_capital_letter">Password must contain an uppercase character</string>
+    <string name="prefs_key_user_email">EMAIL</string>
+    <string name="prefs_key_user_id">USERID</string>
+    <string name="prefs_key_full_name">FULL_NAME</string>
+    <string name="title_dialog_reset_password">RESET PASSWORD</string>
+    <string name="verify_email_reset_password">Check your email to change the password.</string>
+    <string name="error_send_email_reset_password">An error has occurred sending the email to reset the password</string>
+
+    <!-- MY PROFILE-->
+    <string name="myProfileActivityLabel">My Profile</string>
+    <string name="hint_name_profile">Name</string>
+    <string name="hint_surname_profile">Surname</string>
+    <string name="hint_idCard_profile">DNI, NIE or passport</string>
+    <string name="hint_phone_profile">Phone</string>
+    <string name="hint_city_profile">City</string>
+    <string name="hint_province_profile">Province</string>
+    <string name="labelButtonUpdateProfile">Update My Profile</string>
+    <string name="asterisk">*</string>
+    <string name="required">* required</string>
+
+    <!-- CHANGE PASSWORD-->
+    <string name="changePasswordActivityLabel">Change password</string>
+    <string name="oldPassword">Current password</string>
+    <string name="newPassword">New Password</string>
+    <string name="retypeNewPassword">Retype new password</string>
+    <string name="labelButtonChangePassword">Change Password</string>
+    <string name="passwordNoMatch">Passwords don\'t match</string>
+    <string name="errorChangingPassword">ERROR: Impossible to change the password!! Please try again later.</string>
+    <string name="successChangingPassword">Your password has been successfully changed!!!.</string>
+    <string name="errorAuthenticationFailed">ERROR: Authentication failed!!!</string>
+    <string name="errorOldNewPasswordMatch">ERROR: The current password and the new password match. Please try again.</string>
+    <string name="registerFragmentLabel">Register into WaspAlarm</string>
+    <string name="labelButtonRegisterMe">REGISTER</string>
+
+    <!-- REGISTER -->
+    <string name="error_name_empty">Enter your name</string>
+    <string name="error_surname_empty">Enter your surname</string>
+    <string name="error_phone_empty">Enter your phone</string>
+    <string name="title_dialog_successful_register">REGISTERED SUCCESSFULLY</string>
+    <string name="message_dialog_successful_register">You have been registered successfully. Go to SIGN IN to enter into WaspAlarm with your email and password.</string>
+
+    <!-- SIGHTING -->
+    <!-- constants -->
+    <string name="TREE">Tree</string>
+    <string name="BUILDING">Building</string>
+    <string name="TERRAIN">Terrain</string>
+    <string name="PRIMARY_SECONDARY">Primary/Secondary</string>
+    <string name="EMBRYONIC">Embryonic</string>
+    <string name="HORNET">Hornet</string>
+    <string name="NEST">Nest</string>
+    <string name="SOLVED">Solved</string>
+    <string name="PENDING_VERIFICATION">Pending verification</string>
+    <string name="REPORTED">Reported</string>
+    <string name="PENDING_RESOLUTION">Pending resolution</string>
+    <string name="NOT_INTERVENTION_SIGHTING">Not intervention</string>
+    <string name="ACTIVE">Active</string>
+    <string name="REMOVED">Removed</string>
+    <string name="INACTIVE">Inactive</string>
+    <string name="NOT_VELUTINA">Not velutina</string>
+    <string name="NOT_LOCATED">Not located</string>
+    <string name="NOT_INTERVENTION">Not intervention</string>
+    <string name="BIOCIDE_INJECTED">Biocide injected</string>
+    <string name="BIOCIDE_SPRAYED">Biocide sprayed</string>
+
+    <!--AddPhotosFragment-->
+    <string name="error_reading_firebase">Error reading the database</string>
+    <string name="addSightingActivityLabel">Add Sighting</string>
+    <string name="addPhotosFragmentLabel">Add Photos</string>
+    <string name="requestPermission">Permission Request</string>
+    <string name="justificationPermissionCamera">Without camera permission you will not be able to take photos.</string>
+    <string name="justificationPermissionWriteExternaStorage">Without storage permission you will not be able to save photos or send the sighting.</string>
+    <string name="appPhotosDirectory">PhotosWaspAlarm</string>
+    <string name="error_loading_photo">Error loading the photo</string>
+    <string name="labelMoreImages">More photos?</string>
+    <string name="labelBtNext">Next</string>
+    <string name="place">Place (neighborhood, forest, highway, yard,...)</string>
+    <string name="labelPlaceSeenNest">Where have you seen it?</string>
+    <string name="labelPlaceSeenWasp">Where have you seen them?</string>
+    <string name="wasps">Wasps</string>
+    <string name="nests">Nest</string>
+    <string name="labelWhatYouSeen">What have you seen?</string>
+    <string name="error_limit_allowed_photos">You cannot attach more than 6 photos!!!!</string>
+
+    <!--AddLocationFragment-->
+    <string name="addLocationFragmentLabel">Where are you</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyAhSEL1WCAp0_DsXJxyQiRtKqnKOnmpsIk
+    </string>
+    <string name="labelWhereAreYou">What locality are you in?</string>
+    <string name="commentsLocation">Notes to help locate it</string>
+    <string name="locality">Locality</string>
+    <string name="longitude">Longitude</string>
+    <string name="latitude">Latitude</string>
+    <string name="error_loading_google_map">Error loading Google Maps map</string>
+    <string name="justificationPermissionLocation">Without the location permission it cannot be obtained automatically its location to record the sighting or see those already registered.</string>
+    <string name="error_permission_location_denied">The location permission is not granted. Please grant it to be able to locate you!!!</string>
+    <string name="location_data_extra_not_available">A location has not been provided to the Geocoder service and therefore I cannot find out your locality.</string>
+    <string name="service_not_available">Error: locality recognition service not available.</string>
+    <string name="invalid_lat_long_used">Error: the indicated latitude or longitude is wrong. Please check them!!</string>
+    <string name="no_address_found">No address found for that latitude and longitude</string>
+    <string name="address_found">Address not found</string>
+    <string name="error_receiver_not_available">ERROR: you have not indicated any receiver to collect the results of the locality request.</string>
+
+    <!-- AddDescriptionNestFragment -->
+    <string name="addDescriptionNestFragmentLabel">How is the nest</string>
+    <string name="addWhoAreYoutFragmentLabel">Who are you</string>
+    <string name="labelHowIsTheNest">How is the nest?</string>
+    <string name="labelNestType">Type</string>
+    <string name="labelDoubsType">You don\'t know which type it is?</string>
+    <string name="labelHelpDoubsType">Help</string>
+    <string name="labelSpNestStand">Select the nest support</string>
+    <string name="labelNestHeight">How high is the nest (in meters)?</string>
+    <string name="labelWaspAround">Was there wasps around?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="titleDialogNestsTypes">Types of nests</string>
+    <string name="dash">-</string>
+
+    <!-- dialog nest types -->
+    <string name="size_primary_secondary_nest">Height up to 1 meter and between 40 and 80 cm in diameter.</string>
+    <string name="size_embryonic_nest">Size of a tennis ball (diameter smaller than 10 cm). You can eliminate the queen with a fly swatter.</string>
+    <string name="when_embryonic_nest">It usually appears in early spring and is temporary.</string>
+    <string name="when_primary_secondary_nest"> It usually appears from early summer until autumn and is the final of the colony.</string>
+    <string name="material_embryonic_nest">Built with a texture similar to very fine papier-mâché.</string>
+    <string name="material_primary_secondary_nest">Built with a very rough material.</string>
+    <string name="where_embryonic_nest">In areas protected from rain and air: garages, sheds, eaves, cornices, holes, walls, floor, ... </string>
+    <string name="where_primary_secondary_nest">Places high as trees.  They can also appear on some ledge and very occasionally on shrub and even on the ground. </string>.
+    <string name="entry_embryonic_nest">They have the entry below.</string>
+    <string name="entry_primary_secondary_nest">They have the entrance on one side.</string>
+    <string name="close">CLOSE</string>
+    <string name="labelWhoAreYou">Who are you?</string>
+    <string name="fullName">Full name</string>
+    <string name="InformationPrivacyPolicyAddWhoAreYou">This data will be stored in a safe place and used with the only purpose of carrying out
+                                                        the service for which they were requested, maintaining the privacy. To continue the user
+                                                        must accept the  <a href="https://alejandrtf.github.io/AlarmAvispa/privacy.html"> %1$s <b>Privacy Policy</b> %2$s.</a></string>
+    <string name="accept_privacy_policy">I accept the Privacy Policy</string>
+    <string name="labelBtSendSighting">Send sighting</string>
+
+    <!-- AddWhoAreYouFragment -->
+    <string name="error_privacy_policy_not_accepted">You must accept the privacy policy to continue!.</string>
+    <string name="error_requiered_field_without_fill"> There are mandatory fields without filling in. Please check your data again!.</string>
+    <string name="municipality">Municipality</string>
+    <string name="title_dialog_uploading_photos">Uploading photos...</string>
+    <string name="error_uploading_photos_title">ERROR: Uploading photos</string>
+    <string name="error_uploading_photos_message">An error has occurred while uploading the sighting photos.</string>
+    <string name="error_conection_internet_title">No internet connection</string>
+    <string name="error_conection_internet_message">There is no internet connection and it is necessary to store and send the sighting.\n Please check your internet connection and try again!!</string>
+    <string name="title_dialog_sending_sighting">Sending the sighting. Please wait...!!!!</string>
+    <string name="error_getting_number_notifications_message">Error when getting the number of sightings that were reported for that year in that municipality. </string>
+    <string name="error_getting_number_notifications_title">Error when getting the number of sightings!</string>
+    <string name="error_adding_sighting_message">Error when adding sighting to database</string>
+    <string name="error_adding_sighting_title">Error when adding sighting!</string>
+    <string name="whatsapp_number_official">610255111</string>
+    <string name="share_by_whatsapp">Compartir por Whatsapp</string>
+    <string name="justificationPermissionReadContact">Permission to read the contacts is required to check if you have the official whatsapp number add
+                        as a contact to be able to send the sighting by Whatsapp. Without this permission, the operation to notify the sighting cannot end.
+    </string>
+    <string name="justificationPermissionWriteContact">If you don\'t have the official Whatsapp number required to send the sighting added in the device
+                                                        contact list it is imperative that it is added. This process of adding the contact will be done automatically by you,
+                                                        if you grant this permission.
+                                                        \n Without it, you won\'t be able to send the whatsapp.
+    </string>
+    <string name="title_dialog_new_creation_contact">Creation of a new contact for the Whatsapp</string>
+    <string name="message_dialog_new_creation_contact">We will proceed to create a new contact with the name of \"WaspAlarm\".\n This contact is required in order to be able to
+                                                        send the whatsapp with the sighting data.</string>
+    <string name="accept">ACCEPT</string>
+    <string name="cancel">CANCEL</string>
+    <string name="error_rejecting_creation_new_contact">If you don\'t create the new contact, you won\'t be able to register your sighting and
+                                                        therefore notify it to the relevant authorities.</string>
+    <string name="title_dialog_created_contact">Contact created successfully</string>
+    <string name="message_dialog_created_contact">To continue with the sending, press the button  </string>
+    <string name="whatsapp_package_name">com.whatsapp</string>
+    <string name="title_dialog_not_installed_whatsapp">WHATSAPP not installed</string>
+    <string name="message_dialog_not_installed_whatsapp">No Whatsapp installed application has been detected.\n Please, proceed to install it in order to be able to send the sighting!!</string>
+    <string name="error_permission_read_contact">You haven\'t been granted permission to read the contacts. Without it, it can\'t be checked if you already have the necessary contact to send the Whatsapp.
+                                                Please, grant it!</string>
+    <string name="error_permission_write_external_storage">You haven\'t been granted permission for storage. It is necessary to send the Whatsapp with
+                                                            the sighting data. Please, grant it!!!</string>
+    <string name="file_extension">.txt</string>
+    <string name="title_text_send_by_whatsapp">DETAILED INFORMATION ABOUT THE SIGHTING</string>
+    <string name="labelNestStand">Nest stand</string>
+    <string name="nestHeight">How high is the nest (in meters)?</string>
+    <string name="sighting_date">Sighting Date</string>
+    <string name="title_dialog_help_continue_sending">How to go on with the sending</string>
+    <string name="message_dialog_help_continue_sending">Follow the instructions below and the information will be sent by Whatsapp
+                                        to \"WaspAlarm\":\n\n
+                                        1.- A Whatsapp window will automatically appear.\n
+                                        2.- Select the contact \"WaspAlarm\" and click on.\n
+                                        3.- Click on the green button for the whatsapp to be sent.\n
+                                        4.- As the sending includes pictures, you must press again on the same green button for the pictures to be sent.\n</string>
+    <string name="send_by_whatsapp">Send by WHATSAPP</string>
+    <string name="error_rejecting_sending_whatsapp">If you don\'t send the whatsapp, the sighting won\'t be notified to the relevant authorities who are
+                                                    responsible for its treatment.</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="message_loading">Loading...</string>
+    <string name="error_loading_privacy_web_message">An error has occurred during the privacy policy loading.</string>
+    <string name="error_loading_privacy_web_title">Error loading the privacy policy</string>
+    <string name="terms_conditions">Terms and Conditions of use</string>
+    <string name="error_loading_terms_conditions_web_message">An error has occurred during the terms and conditions of use loading.</string>
+    <string name="error_loading_terms_conditions_web_title">Error loading the therms and conditions of use</string>
+    <string name="web_app_with_privacy">Web of the application</string>
+    <string name="error_loading__web_message">An error has occurred during the web application loading.</string>
+    <string name="error_loading__web_title">Error loading the web of the application.</string>
+
+
+    <!-- MapSightingFragment -->
+    <string name="mapSightingFragmentLabel">Sightings</string>
+
+    <!--TrapFragmentLabel-->
+    <string name="trapFragmentLabel">Traps</string>
+
+    <!-- others-->
+    <string name="error_getting_query">An error has occurred when receiving the sightings from the Internet.</string>
+    <string name="unknown_change">Unknown change</string>
+    <string name="route">HOW TO GET THERE</string>
+    <string name="title_dialog_notification_new_registered_sighting">New sighting registered!</string>
+    <string name="coordinates_new_sighting_title">Coordinates of the new sighting:</string>
+    <string name="go">GO AND SEE IT</string>
+    <string name="map_sighting_menu_option_annual_charts">Annual Charts</string>
+    <string name="map_sighting_menu_option_monthly_charts">Monthly charts for the current year</string>
+    <string name="map_sighting_menu_option_municipalities_chart">Chart by municipalities for the current year</string>
+    <string name="map_sighting_menu_option_municipalities_monthly_chart">Chart by municipalities for the current month</string>
+    <string name="map_sighting_menu_title_charts">Charts</string>
+
+    <string name="chartByMunicipalitiesCurrentYearLabel">Chart by municipalities for the current year</string>
+    <string name="chartBar3dSightingByMunicipalityTitle">Number of sightings per municipality within the current year </string>
+    <string name="chartBar3dSightingByMunicipalityYAxisTitle">Number of sightings</string>
+    <string name="chartByMunicipalitiesCurrentMonth">Chart of the current month per municipality</string>
+    <string name="municipalities">Municipalities</string>
+    <string name="not_data">No data to be shown</string>
+    <string name="error_fields_register">Wrong information</string>
+    <string name="error_fields_register_message">Check all information again: email, password,... There is wrong information.</string>
+    <string name="error_conection_internet_loading_privacy">Impossible to load the privacy policy because you don\'t have Internet. \n
+                                                            Please check your connection and try again later!</string>
+    <string name="error_conection_internet_terms_conditions">Impossible to load the terms and conditions of the use because you don\'t have Internet. \n
+                                                            Please check your connection and try again later!</string>
+    <string name="error_conection_internet_webapp">Impossible to load the web of the application because you don\'t have Internet.
+                                                            \n Please check your connection and try again later!</string>
+    <string name="error_gps_not_available_or_internet">It was impossible to get your latitude and longitude possibly because you don\'t have Internet.
+                                                        Please try again later or manually enter your latitude and longitude.</string>
+    <string name="error_invalid_latitude">Invalid latitude</string>
+    <string name="error_invalid_longitude">Invalid longitude</string>
+    <string name="error_invalid_municipality">Municipality not detected or without manually entering</string>
+    <string name="sighting_subject_email">New nest/wasp sighted</string>
+    <string name="sighting_text_email">As an attachment, the photos and data of a new nest sighted are sent through the WaspAlarm application.</string>
+    <string name="share_by_email">Send by email:</string>
+
+    <!-- ContactActivity -->
+    <string name="contactActivityLabel">Contact</string>
+    <string name="subject">Subject</string>
+    <string name="message">Message</string>
+    <string name="send_message">SEND</string>
+    <string name="error_subject_empty">Enter a subject for the message</string>
+    <string name="error_message_empty">Enter a message to send</string>
+    <string name="title_dialog_send_message_contact">Choose an application to send the email</string>
+
+    <!-- AboutFragment -->
+    <string name="about">About</string>
+    <string name="textAbout">This application is designed to assist in the eradication of the Asian Hornet in Asturias.
+                             The data collected will be stored in a database and will also be send to the Ministry of
+                            Infrastructures, Territorial Planning and Environment through Whatsapp 610255111 or in case
+                            of not having Whatsapp application will be sent by email to info@avisap.es as establish BOPA
+                            104 of Friday, May 31, 2019 of the Principality of Asturias.\n\n
+                            The project has been developed as the Final Project of the Master in Application Development on
+                            Mobile Devices of the Polytechnic University of Valencia by Mª Alejandra Tomás Fernández under
+                            the direction of Vicente Carbonell.\n\n
+                            The ownership of the application, as well as the idea and development belong to Mª Alejandra
+                            Tomás Fernández.\n\n
+                            The black wasp icon used as a marker on Google Maps, as well as the nest icon also used as Google
+                            Maps marker have been made by Freepik: \"Icon made by Freepik from www.flaticon.com\".
+    </string>
+
+    <!-- HelpFragment-->
+    <string name="how_use_app">How to use WaspAlarm</string>
+
+</resources>

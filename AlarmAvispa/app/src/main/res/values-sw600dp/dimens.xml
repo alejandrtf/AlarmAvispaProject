@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- BOTTOMNAVIGATIONVIEW text size-->
+    <dimen name="my_bottom_navigation_text_size" tools:override="true">18sp</dimen>
+    <dimen name="my_bottom_navigation_active_text_size" tools:override="true">20sp</dimen>
+    <!-- BOTTOMNAVIGATIONVIEW icon size-->
+    <dimen name="design_bottom_navigation_icon_size" tools:override="true">52dp</dimen>
+    <!--BOTTOMNAVIGATIONVIEW height-->
+    <dimen name="design_bottom_navigation_height">82dp</dimen>
+
+    <!-- fragment_notify_sighting.xml -->
+    <dimen name="margin_top_hornet_logo">40dp</dimen>
+    <dimen name="margin_bottom_hornet_logo">40dp</dimen>
+    <dimen name="text_size_label_buttons_fragment_notify">34sp</dimen>
+    <dimen name="button_take_photo_width">180dp</dimen>
+    <dimen name="button_take_photo_height">180dp</dimen>
+    <dimen name="button_gallery_width">180dp</dimen>
+    <dimen name="button_gallery_height">180dp</dimen>
+    <dimen name="nav_view_header_height">300dp</dimen>
+    <dimen name="nav_view_header_margin_top_logo">70dp</dimen>
+    <dimen name="nav_view_header_margin_bottom_logo">70dp</dimen>
+
+    <!-- fragment_login.xml -->
+    <dimen name="margin_top_email">24dp</dimen>
+    <dimen name="margin_top_button_signin">32dp</dimen>
+    <dimen name="margin_bottom_button_signin">90dp</dimen>
+    <dimen name="margin_top_horizontal_divider">44dp</dimen>
+    <dimen name="text_size_fragment_login">20sp</dimen>
+    <dimen name="text_size_buttons_fragment_login">28sp</dimen>
+
+    <!-- activity_my_profile.xml -->
+    <dimen name="text_size_buttons_myProfile_activity">24sp</dimen>
+
+    <!-- activity_change_password.xml-->
+    <dimen name="text_size_buttons_changePassword_activity">24sp</dimen>
+
+    <!-- layout item_recyclerview_photos.xml-->
+    <dimen name="padding_photos_recyclerview">18dp</dimen>
+    <dimen name="width_height_each_photo">275dp</dimen>
+    <dimen name="text_size_titles_add_sighting">30sp</dimen>
+    <dimen name="text_size_buttons_add_sighting">28sp</dimen>
+    <dimen name="text_size_texts_add_sighting">20sp</dimen>
+    <dimen name="margin_top_recyclerview_photos">16dp</dimen>
+
+    <!-- fragment add_location.xml -->
+    <dimen name="displacement_x">13px</dimen>
+
+    <!-- fragment add_description_nest.xml -->
+    <dimen name="padding_items_spinner">8dp</dimen>
+    <dimen name="text_size_item_spinner_dropdown">20sp</dimen>
+    <dimen name="text_size_radio_buttons_add_description_nest">20sp</dimen>
+
+    <!-- activity_contact.xml -->
+    <dimen name="min_width_window_contact">450dp</dimen>
+</resources>

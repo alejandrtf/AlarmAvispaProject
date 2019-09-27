@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF5722</color>
+    <color name="colorPrimaryDark">#E64A19</color>
+    <color name="colorAccent">#795548</color>
+    <color name="colorAccentLight">#D9BBB2</color>
+    <color name="colorAccentDark">#5D4037</color>
+    <color name="colorAccentExtraDark">#2D1912</color>
+    <color name="colorPrimaryLight">#FFCCBC</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorOrangeLightTransparent">#62FFCCBC</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="reported">#EF0D0D</color>
+    <color name="solved">#FFFFFF</color>
+    <color name="pending_verification">#FF5722</color>
+    <color name="pending_resolution">#BBB8B8</color>
+    <color name="not_intervention_sighting">#0DEF15</color>
+    <color name="verified">#2486EF</color>
+
+
+
+    NOT_INTERVENTION_SIGHTING;
+</resources>

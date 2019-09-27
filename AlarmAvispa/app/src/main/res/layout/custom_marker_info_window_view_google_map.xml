@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/colorPrimaryLight"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="3dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:minHeight="50dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/flContainerImageCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivPhotoSightingCardView"
+                android:layout_width="@dimen/photo_sighting_info_window_width"
+                android:layout_height="@dimen/photo_sighting_info_window_height"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/secondary_nest" />
+
+            <TextView
+                android:id="@+id/tvSightingStateCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorAccent"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Resuelto" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/llContainerCodeSightingCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvCodeSightingCardView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="V2019VIL0002" />
+
+            <ImageView
+                android:id="@+id/ivArrowDownCodeCardView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_weight="0.2"
+                android:clickable="true"
+                android:focusable="true"
+                android:foregroundGravity="right"
+                android:scaleType="centerInside"
+                android:src="@drawable/arrow_down" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clContainerExpandableInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ImageView
+
+                android:id="@+id/ivIconStateInfoWindowGoogleMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvSightingStateDetailCardView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvSightingStateDetailCardView"
+                app:srcCompat="@drawable/icon_state_sighting_info_window_map" />
+
+            <TextView
+                android:id="@+id/tvSightingStateDetailCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:textColor="@color/colorAccentDark"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.08"
+                app:layout_constraintStart_toEndOf="@+id/ivIconStateInfoWindowGoogleMap"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Resuelto" />
+
+            <ImageView
+
+                android:id="@+id/ivIconSightingTypeInfoWindowGoogleMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvSightingTypeDetailCardView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvSightingTypeDetailCardView"
+                app:srcCompat="@drawable/ic_hornest_nest_info_window_googlemap" />
+
+            <TextView
+                android:id="@+id/tvSightingTypeDetailCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:textColor="@color/colorAccentDark"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.08"
+                app:layout_constraintStart_toEndOf="@+id/ivIconSightingTypeInfoWindowGoogleMap"
+                app:layout_constraintTop_toBottomOf="@id/tvSightingStateDetailCardView"
+                tools:text="Primario/Secundario" />
+
+            <ImageView
+
+                android:id="@+id/ivIconSightingStandInfoWindowGoogleMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvSightingStandDetailCardView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvSightingStandDetailCardView"
+                app:srcCompat="@drawable/icon_sighting_stand_info_window_googlemaps" />
+
+            <TextView
+                android:id="@+id/tvSightingStandDetailCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:textColor="@color/colorAccentDark"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.08"
+                app:layout_constraintStart_toEndOf="@+id/ivIconSightingStandInfoWindowGoogleMap"
+                app:layout_constraintTop_toBottomOf="@id/tvSightingTypeDetailCardView"
+                tools:text="Edificación" />
+
+            <ImageView
+
+                android:id="@+id/ivIconSightingLocalityInfoWindowGoogleMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvSightingLocalityDetailCardView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvSightingLocalityDetailCardView"
+                app:srcCompat="@drawable/icon_locality_info_window_googlemap" />
+
+            <TextView
+                android:id="@+id/tvSightingLocalityDetailCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:textColor="@color/colorAccentDark"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.08"
+                app:layout_constraintStart_toEndOf="@+id/ivIconSightingLocalityInfoWindowGoogleMap"
+                app:layout_constraintTop_toBottomOf="@id/tvSightingStandDetailCardView"
+                tools:text="Grases" />
+
+            <ImageView
+
+                android:id="@+id/ivIconSightingMunicipalityInfoWindowGoogleMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvSightingMunicipalityDetailCardView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvSightingMunicipalityDetailCardView"
+                app:srcCompat="@drawable/icon_municipality_info_window_googlemaps" />
+
+            <TextView
+                android:id="@+id/tvSightingMunicipalityDetailCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:textColor="@color/colorAccentDark"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.08"
+                app:layout_constraintStart_toEndOf="@+id/ivIconSightingMunicipalityInfoWindowGoogleMap"
+                app:layout_constraintTop_toBottomOf="@id/tvSightingLocalityDetailCardView"
+                tools:text="Grases" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
+

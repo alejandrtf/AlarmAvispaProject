@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- To change the background of options menu-->
+        <item name="android:itemBackground">@color/colorAccent</item>
+
+
+
+    </style>
+
+    <style name="MyBottomNavigationViewTextAppearance" parent="@style/TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">@dimen/my_bottom_navigation_text_size</item>
+    </style>
+
+    <style name="MyBottomNavigationViewTextAppearance.Active" parent="@style/TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">@dimen/my_bottom_navigation_active_text_size</item>
+    </style>
+
+    <style name="MyThemeDialog" parent="@style/Theme.MaterialComponents.Light.Dialog">
+        <item name="colorSecondary">@color/colorAccent</item>
+
+    </style>
+
+
+
+
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- fragment_notify_sighting.xml -->
+    <dimen name="margin_top_hornet_logo">24dp</dimen>
+    <dimen name="margin_bottom_hornet_logo">24dp</dimen>
+    <dimen name="text_size_label_buttons_fragment_notify">20sp</dimen>
+    <dimen name="button_take_photo_width">70dp</dimen>
+    <dimen name="button_take_photo_height">70dp</dimen>
+    <dimen name="button_gallery_width">70dp</dimen>
+    <dimen name="button_gallery_height">70dp</dimen>
+    <dimen name="nav_view_header_height">200dp</dimen>
+    <dimen name="nav_view_header_margin_top_logo">50dp</dimen>
+    <dimen name="nav_view_header_margin_bottom_logo">50dp</dimen>
+
+    <!-- fragment_login.xml -->
+    <dimen name="margin_top_email">8dp</dimen>
+    <dimen name="margin_top_button_signin">8dp</dimen>
+    <dimen name="margin_bottom_button_signin">16dp</dimen>
+    <dimen name="margin_top_horizontal_divider">16dp</dimen>
+    <dimen name="text_size_fragment_login">18sp</dimen>
+    <dimen name="text_size_buttons_fragment_login">22sp</dimen>
+
+    <!-- activity_my_profile.xml -->
+    <dimen name="text_size_buttons_myProfile_activity">20sp</dimen>
+
+    <!-- layout item_recyclerview_photos.xml-->
+    <dimen name="width_height_each_photo">100dp</dimen>
+
+    <!-- activity_contact.xml -->
+    <dimen name="min_width_window_contact">300dp</dimen>
+
+</resources>

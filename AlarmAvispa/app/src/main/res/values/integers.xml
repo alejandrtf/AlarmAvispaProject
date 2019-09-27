@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="max_height_nest">50</integer>
+    <integer name="progress_seekbar_nest_height">0</integer>
+    <integer name="min_height_nest">0</integer>
+</resources>

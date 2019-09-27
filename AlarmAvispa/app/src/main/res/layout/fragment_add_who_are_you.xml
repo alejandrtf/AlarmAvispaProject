@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintAddWhoAreYou"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddWhoAreYouFragment">
+
+    <TextView
+        android:id="@+id/tvLabelWhoAreYou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/labelWhoAreYou"
+        android:textColor="@color/colorAccentDark"
+        android:textSize="@dimen/text_size_titles_add_sighting"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/layoutFullNameAddWhoAreYou"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutFullNameAddWhoAreYou"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_left_field"
+        android:layout_marginLeft="@dimen/margin_left_field"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/margin_right_field"
+        android:layout_marginRight="@dimen/margin_right_field"
+        android:minHeight="?android:attr/actionBarSize"
+        android:transitionGroup="true"
+        app:helperText="@string/required"
+        app:helperTextEnabled="true"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        app:layout_constraintBottom_toTopOf="@+id/layoutPhoneAddWhoAreYou"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelWhoAreYou">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etFullNameAddWhoAreYou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/fullName"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName|textCapWords"
+            android:textSize="@dimen/text_size_fragment_login" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutPhoneAddWhoAreYou"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_left_field"
+        android:layout_marginLeft="@dimen/margin_left_field"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/margin_right_field"
+        android:layout_marginRight="@dimen/margin_right_field"
+        android:minHeight="?android:attr/actionBarSize"
+        android:transitionGroup="true"
+        app:helperText="@string/required"
+        app:helperTextEnabled="true"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        app:layout_constraintBottom_toTopOf="@+id/tvInformationPrivacyPolicy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutFullNameAddWhoAreYou">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPhoneAddWhoAreYou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_phone_profile"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:textSize="@dimen/text_size_fragment_login" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvInformationPrivacyPolicy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_left_field"
+        android:layout_marginLeft="@dimen/margin_left_field"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:textColorLink="@drawable/selector_text_link_privay_color"
+        android:justificationMode="inter_word"
+        android:text="@string/InformationPrivacyPolicyAddWhoAreYou"
+        android:textSize="@dimen/text_size_fragment_login"
+        app:layout_constraintBottom_toTopOf="@+id/cbAcceptPrivayPolicyAddWhoAreYou"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutPhoneAddWhoAreYou" />
+
+    <CheckBox
+        android:id="@+id/cbAcceptPrivayPolicyAddWhoAreYou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_left_field"
+        android:layout_marginLeft="@dimen/margin_left_field"
+        android:layout_marginTop="8dp"
+        android:text="@string/accept_privacy_policy"
+        android:textSize="@dimen/text_size_fragment_login"
+        app:layout_constraintBottom_toTopOf="@+id/btSendAddWhoAreYouFragment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInformationPrivacyPolicy" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btSendAddWhoAreYouFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/labelBtSendSighting"
+        android:textSize="@dimen/text_size_buttons_add_sighting"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbAcceptPrivayPolicyAddWhoAreYou" />
+</androidx.constraintlayout.widget.ConstraintLayout>

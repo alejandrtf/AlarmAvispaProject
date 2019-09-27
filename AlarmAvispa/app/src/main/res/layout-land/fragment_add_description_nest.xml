@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintAddDescriptionNest"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddDescriptionNestFragment">
+
+    <TextView
+        android:id="@+id/tvLabelHowIsTheNest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/labelHowIsTheNest"
+        android:textColor="@color/colorAccentDark"
+        android:textSize="@dimen/text_size_titles_add_sighting"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelNestType"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/backgroundNestType"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorOrangeLightTransparent"
+        app:layout_constraintBottom_toBottomOf="@id/rgNestType"
+        app:layout_constraintLeft_toLeftOf="@+id/tvLabelNestType"
+        app:layout_constraintRight_toRightOf="@+id/rgNestType"
+        app:layout_constraintTop_toTopOf="@+id/tvLabelNestType" />
+
+    <TextView
+        android:id="@+id/tvLabelNestType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/labelNestType"
+        android:textColor="@color/colorAccentDark"
+        android:textSize="@dimen/text_size_texts_add_sighting"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/rgNestType"
+        app:layout_constraintEnd_toEndOf="@+id/rgNestType"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/rgNestType"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelHowIsTheNest" />
+
+    <RadioGroup
+        android:id="@+id/rgNestType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:checkedButton="@+id/rbPrimarySecondary"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelDoubtsType"
+        app:layout_constraintEnd_toEndOf="@+id/tvLabelHelpDoubtsType"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelNestType">
+
+        <RadioButton
+            android:id="@+id/rbPrimarySecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/PRIMARY_SECONDARY"
+            android:textSize="@dimen/text_size_radio_buttons_add_description_nest" />
+
+        <RadioButton
+            android:id="@+id/rbEmbryonic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/EMBRYONIC"
+            android:textSize="@dimen/text_size_radio_buttons_add_description_nest" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/ornamentImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/rgNestType"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rgNestType"
+        app:layout_constraintTop_toTopOf="@+id/backgroundNestType"
+        app:srcCompat="@drawable/secondary_nest" />
+
+    <ImageView
+        android:id="@+id/ivQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:adjustViewBounds="true"
+        android:src="@android:drawable/ic_menu_help"
+        android:tint="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLabelDoubtsType"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvLabelDoubtsType" />
+
+    <TextView
+        android:id="@+id/tvLabelDoubtsType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/eagle_lake"
+        android:text="@string/labelDoubsType"
+        android:textColor="@color/colorAccentExtraDark"
+        android:textSize="@dimen/text_size_texts_add_sighting"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelWaspAround"
+        app:layout_constraintStart_toEndOf="@+id/ivQuestion"
+        app:layout_constraintTop_toBottomOf="@+id/rgNestType" />
+
+    <TextView
+        android:id="@+id/tvLabelHelpDoubtsType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:fontFamily="@font/eagle_lake"
+        android:text="@string/labelHelpDoubsType"
+        android:clickable="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_texts_add_sighting"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLabelDoubtsType"
+        app:layout_constraintStart_toEndOf="@+id/tvLabelDoubtsType"
+        app:layout_constraintTop_toTopOf="@+id/tvLabelDoubtsType" />
+
+    <TextView
+        android:id="@+id/tvLabelSpNestStand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/labelSpNestStand"
+        android:textColor="@color/colorAccentDark"
+        android:textSize="@dimen/text_size_titles_add_sighting"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/spNestStand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rgNestType"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelHowIsTheNest" />
+
+    <Spinner
+        android:id="@+id/spNestStand"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelNestHeight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/backgroundNestType"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelSpNestStand" />
+
+    <TextView
+        android:id="@+id/tvLabelNestHeight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:text="@string/labelNestHeight"
+        android:textColor="@color/colorAccentDark"
+        android:textSize="@dimen/text_size_titles_add_sighting"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvProgressSeekbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rgNestType"
+        app:layout_constraintTop_toBottomOf="@+id/spNestStand" />
+
+    <TextView
+        android:id="@+id/tvProgressSeekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_texts_add_sighting"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/sbNestHeight"
+        app:layout_constraintEnd_toEndOf="@id/sbNestHeight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rgNestType"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelNestHeight" />
+
+    <SeekBar
+        android:id="@+id/sbNestHeight"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:max="@integer/max_height_nest"
+        android:min="@integer/min_height_nest"
+        android:progress="@integer/progress_seekbar_nest_height"
+        android:thumbTint="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/btNextAddDescriptionNestFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/rgNestType"
+        app:layout_constraintTop_toBottomOf="@+id/tvProgressSeekbar" />
+
+    <TextView
+        android:id="@+id/tvLabelWaspAround"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/labelWaspAround"
+        android:textColor="@color/colorAccentDark"
+        android:textSize="@dimen/text_size_titles_add_sighting"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/rgWaspAround"
+        app:layout_constraintEnd_toEndOf="@+id/rgNestType"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelDoubtsType" />
+
+    <RadioGroup
+        android:id="@+id/rgWaspAround"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+
+        android:checkedButton="@+id/rbYesWasp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvLabelWaspAround"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelWaspAround">
+
+        <RadioButton
+            android:id="@+id/rbYesWasp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textSize="@dimen/text_size_radio_buttons_add_description_nest" />
+
+        <RadioButton
+            android:id="@+id/rbNoWasp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:textSize="@dimen/text_size_radio_buttons_add_description_nest" />
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btNextAddDescriptionNestFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/labelBtNext"
+        android:textSize="@dimen/text_size_buttons_add_sighting"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rgWaspAround"
+        app:layout_constraintTop_toBottomOf="@+id/sbNestHeight" />
+</androidx.constraintlayout.widget.ConstraintLayout>

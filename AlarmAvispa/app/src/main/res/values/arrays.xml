@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nest_stand_array">
+        <item>@string/dash</item>
+        <item>@string/TREE</item>
+        <item>@string/BUILDING</item>
+        <item>@string/TERRAIN</item>
+    </string-array>
+
+</resources>
